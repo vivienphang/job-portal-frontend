@@ -1,0 +1,35 @@
+<!-- -------- Displaying job listing bar -------- -->
+<div class="grid-container">
+  <div class="grid-child-listing">
+    <!-- <div class="row">
+      <h2>Frontend Developer</h2>
+      <p>Artificial Intelligence</p>
+      <p>10 - 50 employees</p>
+    </div>
+  </div> -->
+
+    <!-- -------- Displaying job description -------- -->
+    <!-- <div class="row">
+    <div class="grid-child-description">
+      <h2>Frontend Developer</h2>
+    </div>
+  </div>
+</div> -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3 mt-5" *ngFor="let item of listing.data">
+          <div class="card">
+            <div class="grid-child-description">
+              <h3 class="card-title">{{ item.title }}</h3>
+              <h5 class="card-title">{{ item.description }}</h5>
+              <h5 class="card-title">{{ item.responsibilities }}</h5>
+              <h5 class="card-title">{{ item.requirements }}</h5>
+              <p class="card-text">{{ item.tags }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

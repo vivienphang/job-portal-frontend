@@ -1,0 +1,26 @@
+.grid-container {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  padding: 2vh;
+  background-color: rgb(241, 227, 209);
+  max-width: 90%;
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 50px;
+  border-radius: 8px;
+}
+
+.grid-child-listing {
+  background-color: lightgray;
+  overflow: visible;
+  max-height: 100%;
+  border-color: grey;
+}
+
+.grid-child-description {
+  padding: 2vh;
+  background-color: lightgray;
+}
